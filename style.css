@@ -1,0 +1,182 @@
+
+body {
+    font-family: "Cinzel" , "Oswald", Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #adadad ;
+    background-color: linear-gradient(#adadad , #333);
+    color: #66c0f4;
+}
+
+
+nav {
+    background-color: #171a21;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #66c0f4;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 16px;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    background-color: #232730;
+    border-radius: 5px;
+}
+
+.hero {
+    background: url('/images/fobhero.jpg') no-repeat center center/cover;
+    height: 400px;
+    color: #66c0f4;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 24px;
+    font-family: "Oswald";
+}
+
+
+#pricing {
+    padding: 40px;
+    text-align: center;
+    background-color: #292e37;
+}
+
+#pricing h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.pricing-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background-color: #232730;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px #adadad;
+    transform: translateY(10px);
+}
+
+.card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 18px;
+}
+
+
+#contact {
+    padding: 40px;
+    background-color: #292e37;
+    text-align: center;
+}
+
+#contact form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#contact input,
+#contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #66c0f4;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contact button:hover {
+    background-color: #555;
+}
+
+
+#check {
+    padding: 40px;
+    text-align: center;
+    background-color: #292e37;
+}
+
+#check button {
+    padding: 15px 30px;
+    background-color: #adadad38;
+    color: #66c0f4;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#check button:hover {
+    background-color: #adadad50;
+}
+
+
+footer {
+    background-color: #333;
+    color: #66c0f4;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (min-width: 320px) {
+    .pricing-cards {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+    }
+}
+
+@media (min-width: 768px) {
+    .pricing-cards {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+     }
+}
