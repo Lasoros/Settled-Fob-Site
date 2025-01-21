@@ -54,7 +54,11 @@
     
     <section id="contact">
         <h2>Contact Us</h2>
-        <h3>Phone: 937-902-3445</h3>
+        <h3><select name="Phone" id="Phone">
+            <option value="Number">Phone</option>
+            <option value="Number">937-902-3445</option>
+        </select></h3>
+        
         <form action="submit_form.php" method="POST">
             <input type="text" name="name" placeholder="Your Name" required>
             <input type="email" name="email" placeholder="Your Email" required>
